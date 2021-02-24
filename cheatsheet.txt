@@ -5,5 +5,9 @@ jalanin php artisan key:generate
 
 kalau wsl gabisa jalan di vscode, set ubuntu as default dulu dan ganti versi 2
 
+git add .
+git commit -m "Initial Commit"
+git push heroku HEAD:master
+
 1. composer install
 2. open wsl ./vendor/bin/sail up

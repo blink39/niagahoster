@@ -151,15 +151,15 @@
 
             <div class="row justify-content-center margin-50" style="text-align: center; color:grey;">
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <embed src="{{URL::asset('/image/illustration banner PHP zenguard01.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/illustration banner PHP zenguard01.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP Zend Guard Loader
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <embed src="{{URL::asset('/image/composer.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/composer.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP Composer
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_ioncube.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_ioncube.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP ionCube Loader
                 </div>
             </div>
@@ -322,7 +322,7 @@
                 <br><br>
 
                 <div class="col col-lg-4 col-md-4 col-sm-6 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_PHP Semua Versi.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_PHP Semua Versi.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
                     <br>
                     <span style="font-weight: 600px; font-size: 20px;"><strong>PHP Semua Versi</strong></span>
                     <br>
@@ -332,7 +332,7 @@
                     <br>
                 </div>
                 <div class="col col-lg-4 col-md-4 col-sm-6 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_My SQL.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_My SQL.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
                     <br>
                     <span style="font-weight: 600px; font-size: 20px;"><strong>MySQL Versi 5.6</strong></span>
                     <br>
@@ -342,7 +342,7 @@
                     <br>
                 </div>
                 <div class="col col-lg-4 col-md-4 col-sm-6 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_CPanel.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_CPanel.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
                     <br>
                     <span style="font-weight: 600px; font-size: 20px;"><strong>Panel Hosting cPanel</strong></span>
                     <br>
@@ -352,7 +352,7 @@
                     <br>
                 </div>
                 <div class="col col-lg-4 col-md-4 col-sm-6 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_garansi uptime.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_garansi uptime.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
                     <br>
                     <span style="font-weight: 600px; font-size: 20px;"><strong>Garansi Uptime 99.9%</strong></span>
                     <br>
@@ -362,7 +362,7 @@
                     <br>
                 </div>
                 <div class="col col-lg-4 col-md-4 col-sm-6 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_InnoDB.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_InnoDB.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
                     <br>
                     <span style="font-weight: 600px; font-size: 20px;"><strong>Database InnoDB Unlimited</strong></span>
                     <br>
@@ -372,7 +372,7 @@
                     <br>
                 </div>
                 <div class="col col-lg-4 col-md-4 col-sm-6 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/icon PHP Hosting_My SQL remote.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/icon PHP Hosting_My SQL remote.svg')}}" width="100" height="60" alt="" style="max-width: 95%;">
                     <br>
                     <span style="font-weight: 600px; font-size: 20px;"><strong>Wildcard Remote MySQL</strong></span>
                     <br>
@@ -411,7 +411,7 @@
                 </div>
                 
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/illustration banner support laravel hosting.svg')}}" width="900" height="350" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/illustration banner support laravel hosting.svg')}}" width="900" height="350" alt="" style="max-width: 95%;">
                 </div>
             </div>
 
@@ -489,7 +489,7 @@
                 </div>
                 
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/image support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/image support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
                 </div>
             </div>
         </div>
