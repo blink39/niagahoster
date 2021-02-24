@@ -489,7 +489,7 @@
                 </div>
                 
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
-                    <img src="{{URL::asset('/image/image support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/image_support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
                 </div>
             </div>
         </div>
