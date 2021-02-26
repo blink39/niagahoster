@@ -15,7 +15,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        
         <style>
             body {
                 font-family: 'Nunito Sans', sans-serif;
@@ -36,7 +37,7 @@
             .box-border-blue {
                 border-style: solid;
                 border-width: 1px;
-                border-color: blue;
+                border-color: #008FEE;
                 display: inline-block;
             }
 
@@ -65,6 +66,12 @@
 
             .margin-50 {
                 margin-top: 50px;
+            }
+            
+            @media only screen and (max-width: 576px) {
+                .text-xs-center {
+                    text-align: center !important;
+                }
             }
         </style>
     </head>
@@ -152,15 +159,15 @@
 
             <div class="row justify-content-center margin-50" style="text-align: center; color:grey;">
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <img src="{{URL::asset('/image/illustration banner PHP zenguard01.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/illustration banner PHP zenguard01.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP Zend Guard Loader
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <img src="{{URL::asset('/image/composer.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/composer.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP Composer
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <img src="{{URL::asset('/image/icon PHP Hosting_ioncube.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/icon PHP Hosting_ioncube.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP ionCube Loader
                 </div>
             </div>
@@ -173,40 +180,40 @@
             <div class="row justify-content-center margin-50">
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
                     <div class="row" style="text-align: center;">
-                        <div class="col col-lg-6 box-border">
-                            <span style="font-weight: 600px; font-size: 35px;"><strong>Bayi</strong></span>
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border">
+                            <span style="font-weight: 600px; font-size: 35px;"><strong id="name0"></strong></span>
                             <hr>
-                            <strike>Rp 19.900</strike>
+                            <strike id="normalPrice0"></strike>
                             <br>
-                            <span style="font-weight: 600px; font-size: 25px;"><sup>Rp</sup> <strong style="font-size:40px;">14</strong> <sup><strong>.900</strong>/bln</sup></span> 
+                            <span style="font-weight: 600px; font-size: 25px;" id="newPrice0"></span> 
                             <hr>
-                            <strong>938</strong> Pengguna Terdaftar
+                            <strong id="user0"></strong> Pengguna Terdaftar
                             <hr>
                             <ul style="list-style: none; font-size:12px;padding-left:0px;">
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>0.5X RESOURCE POWER</strong></li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>500</strong> MB Disk Space</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Bandwidth</li>
+                                <li><strong>0.5X RESOURCE POWER</strong></li>
+                                <li><strong>500</strong> MB Disk Space</li>
+                                <li><strong>Unlimited</strong> Bandwidth</li>
                             </ul>
                             <br>
                             <button class="btn-price"><strong>Pilih Sekarang</strong></button>
                             <br>
                             <br>
                         </div>
-                        <div class="col col-lg-6 box-border">
-                            <span style="font-weight: 600px; font-size: 35px;"><strong>Pelajar</strong></span>
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border">
+                            <span style="font-weight: 600px; font-size: 35px;"><strong id="name1"></strong></span>
                             <hr>
-                            <strike>Rp 46.900</strike>
+                            <strike id="normalPrice1"></strike>
                             <br>
-                            <span style="font-weight: 600px; font-size: 25px;"><sup>Rp</sup> <strong style="font-size:40px;">23</strong> <sup><strong>.450</strong>/bln</sup></span> 
+                            <span style="font-weight: 600px; font-size: 25px;" id="newPrice1"></span> 
                             <hr>
-                            <strong>4.168</strong> Pengguna Terdaftar
+                            <strong id="user1"></strong> Pengguna Terdaftar
                             <hr>
                             <ul style="list-style: none; font-size:12px;padding-left:0px;">
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>1X RESOURCE POWER</strong></li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> MB Disk Space</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Bandwidth</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Database</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Email</li>
+                                <li><strong>1X RESOURCE POWER</strong></li>
+                                <li><strong>Unlimited</strong> MB Disk Space</li>
+                                <li><strong>Unlimited</strong> Bandwidth</li>
+                                <li><strong>Unlimited</strong> Database</li>
+                                <li><strong>Unlimited</strong> Email</li>
                             </ul>
                             <br>
                             <button class="btn-price"><strong>Pilih Sekarang</strong></button>
@@ -217,48 +224,52 @@
                 </div>
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
                     <div class="row" style="text-align: center;">
-                        <div class="col col-lg-6 box-border-blue">
-                            <span style="font-weight: 600px; font-size: 35px;"><strong>Personal</strong></span>
-                            <hr>
-                            <strike>Rp 58.900</strike>
-                            <br>
-                            <span style="font-weight: 600px; font-size: 25px;"><sup>Rp</sup> <strong style="font-size:40px;">38</strong> <sup><strong>.900</strong>/bln</sup></span> 
-                            <hr>
-                            <strong>10.017</strong> Pengguna Terdaftar
-                            <hr>
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border-blue" style="padding:0px;">
+                            <div style="background-color:#008FEE;color:white;">
+                                <span style="font-weight: 600px; font-size: 35px;"><strong id="name2"></strong></span>
+                                <hr>
+                                <strike id="normalPrice2"></strike>
+                                <br>
+                                <span style="font-weight: 600px; font-size: 25px;" id="newPrice2"></span> 
+                                <hr style="margin-bottom:0px;">
+                            </div>
+                            <div style="background-color:#007FDE;color:white;padding:15px 0px 15px 0px;">
+                                <strong id="user2"></strong> Pengguna Terdaftar
+                            </div>
+                            <hr style="margin-top:0px">
                             <ul style="list-style: none; font-size:12px;padding-left:0px;">
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>2X RESOURCE POWER</strong></li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> MB Disk Space</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Bandwidth</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Database</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Email</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Private</strong> Name Server</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>SpamAssassin</strong> Mail Protection</li>
+                                <li><strong>2X RESOURCE POWER</strong></li>
+                                <li><strong>Unlimited</strong> MB Disk Space</li>
+                                <li><strong>Unlimited</strong> Bandwidth</li>
+                                <li><strong>Unlimited</strong> Database</li>
+                                <li><strong>Unlimited</strong> Email</li>
+                                <li><strong>Private</strong> Name Server</li>
+                                <li><strong>SpamAssassin</strong> Mail Protection</li>
                             </ul>
                             <br>
-                            <button class="btn-price"><strong>Pilih Sekarang</strong></button>
+                            <button class="btn-price" style="background-color:#008FEE;color:white;"><strong>Pilih Sekarang</strong></button>
                             <br>
                             <br>
                         </div>
-                        <div class="col col-lg-6 box-border">
-                            <span style="font-weight: 600px; font-size: 35px;"><strong>Bisnis</strong></span>
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border">
+                            <span style="font-weight: 600px; font-size: 35px;"><strong id="name3"></strong></span>
                             <hr>
-                            <strike>Rp 109.900</strike>
+                            <strike id="normalPrice3"></strike>
                             <br>
-                            <span style="font-weight: 600px; font-size: 25px;"><sup>Rp</sup> <strong style="font-size:40px;">65</strong> <sup><strong>.900</strong>/bln</sup></span> 
+                            <span style="font-weight: 600px; font-size: 25px;" id="newPrice3"></span> 
                             <hr>
-                            <strong>3.552</strong> Pengguna Terdaftar
+                            <strong id="user3"></strong> Pengguna Terdaftar
                             <hr>
                             <ul style="list-style: none; font-size:12px;padding-left:0px;">
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>3X RESOURCE POWER</strong></li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> MB Disk Space</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Bandwidth</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Database</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Unlimited</strong> Email</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Private</strong> Name Server</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>SpamAssassin</strong> Mail Protection</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>Prioritas</strong> Layanan Support</li>
-                                <li><i class="fa fa-check-circle" style="color:green;"></i><strong>SpamExpert</strong> Pro Mail Protection</li>
+                                <li><strong>3X RESOURCE POWER</strong></li>
+                                <li><strong>Unlimited</strong> MB Disk Space</li>
+                                <li><strong>Unlimited</strong> Bandwidth</li>
+                                <li><strong>Unlimited</strong> Database</li>
+                                <li><strong>Unlimited</strong> Email</li>
+                                <li><strong>Private</strong> Name Server</li>
+                                <li><strong>SpamAssassin</strong> Mail Protection</li>
+                                <li><strong>Prioritas</strong> Layanan Support</li>
+                                <li><strong>SpamExpert</strong> Pro Mail Protection</li>
                             </ul>
                             <br>
                             <button class="btn-price"><strong>Pilih Sekarang</strong></button>
@@ -393,7 +404,7 @@
 
                 <br><br>
 
-                <div class="col col-lg-5 col-md-10 col-sm-10 col-10" style="text-align: left;">
+                <div class="col col-lg-6 col-md-10 col-sm-10 col-10" style="text-align: left;">
                     Tak perlu menggunakan dedicated server ataupun VPS yang mahal. Layanan PHP hosting murah kami mendukung penuh framework favorit Anda
                     <br>
                     <br>
@@ -411,7 +422,7 @@
                     <button class="btn-hosting"><strong>Pilih Hosting Anda</strong></button>
                 </div>
                 
-                <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
+                <div class="col col-lg-4 col-md-10 col-sm-10 col-10 justify-content-center">
                     <img src="{{URL::asset('/image/illustration banner support laravel hosting.svg')}}" width="900" height="350" alt="" style="max-width: 95%;">
                 </div>
             </div>
@@ -490,7 +501,7 @@
                 </div>
                 
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
-                    <img src="{{URL::asset('/image/image_support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/image_support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
                 </div>
             </div>
         </div>
@@ -584,11 +595,11 @@
                             Review Pelanggan
                         </p>
                     </div>
-                    <div class="col col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="col col-lg-3 col-md-3 col-sm-6 col-6" style="overflow-x:hidden;">
                         <span style="color:#8E8E8E;">NEWSLETTER</span>
                         <br>
                         <br>
-                        <input type="text" placeholder="Email" style="border-radius:50px; background-color:white;padding: 10px 15px 10px 20px;"><button style="margin-left:-120px;border-radius:50px;background-color:#00A2F3;color:white;border:0px;padding: 5px;">Berlangganan</button>
+                        <input type="text" placeholder="Email" style="border-radius:50px; background-color:white;padding: 10px 15px 10px 20px;"><button style="margin-left:-47%;border-radius:50px;background-color:#00A2F3;color:white;border:0px;padding: 5px;">Berlangganan</button>
                         <p style="color:#ADADAD;">
                             Dapatkan promo dan konten menarik dari penyedia hosting terbaik Anda.
                         </p>
@@ -597,10 +608,10 @@
                     </div>
                 </div>
                 <div class="row" style="margin-top:50px;">
-                    <div class="col col-lg-8 col-md-8 col-sm-8 col-12" style="color:#ADADAD;font-size:10px;">
+                    <div class="col col-lg-8 col-md-8 col-sm-8 col-12 text-xs-center" style="color:#ADADAD;font-size:10px;">
                         Copyright ©2021 Niagahoster | Hosting powered by PHP8, CloudLinux, CloudFlare, BitNinja and DC DCI-Indonesia. Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing technology
                     </div>
-                    <div class="col col-lg-4 col-md-4 col-sm-4 col-12" style="color:#ADADAD;text-align:right;font-size:10px;">
+                    <div class="col col-lg-4 col-md-4 col-sm-4 col-12 text-xs-center" style="color:#ADADAD;text-align:right;font-size:10px;">
                         Syarat dan Ketentuan | Kebijakan Privasi
                     </div>
                 </div>
@@ -608,3 +619,22 @@
         </div>
     </body>
 </html>
+<script>
+    var text = '{"packages":[' +
+    '{"name":"Bayi","normalPrice":"19.900","newPrice":"14.900","user":"938" },' +
+    '{"name":"Pelajar","normalPrice":"46.900","newPrice":"23.450","user":"4.168" },' +
+    '{"name":"Personal","normalPrice":"58.900","newPrice":"38.900","user":"10.017" },' +
+    '{"name":"Bisnis","normalPrice":"109.900","newPrice":"65.900","user":"3.552" }]}';
+
+    obj = JSON.parse(text);
+
+    $( document ).ready(function() {
+        for ( var i = 0; i < obj.packages.length; i++) {
+            console.log(obj.packages[i]);
+            $('#name'+i).text(obj.packages[i].name);
+            $('#normalPrice'+i).text(obj.packages[i].normalPrice);
+            $('#newPrice'+i).html('<sup>Rp</sup> <strong style="font-size:40px;">'+obj.packages[i].normalPrice.split(".")[0]+'</strong> <sup><strong>.'+obj.packages[i].normalPrice.split(".")[1]+'</strong>/bln</sup>');
+            $('#user'+i).text(obj.packages[i].user);
+        }
+    });
+</script>
