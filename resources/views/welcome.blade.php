@@ -159,15 +159,15 @@
 
             <div class="row justify-content-center margin-50" style="text-align: center; color:grey;">
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <img src="{{URL::asset('/image/illustration banner PHP zenguard01.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/illustration banner PHP zenguard01.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP Zend Guard Loader
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <img src="{{URL::asset('/image/composer.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/composer.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP Composer
                 </div>
                 <div class="col col-lg-3 col-md-3 col-sm-3 col-7 justify-content-center">
-                    <img src="{{URL::asset('/image/icon PHP Hosting_ioncube.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
+                    <embed src="{{URL::asset('/image/icon PHP Hosting_ioncube.svg')}}" width="300" height="170" alt="" style="max-width: 95%;">
                     PHP ionCube Loader
                 </div>
             </div>
@@ -501,7 +501,7 @@
                 </div>
                 
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
-                    <embed src="{{URL::asset('/image/Image_support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
+                    <img src="{{URL::asset('/image/Image_support.png')}}" width="500" height="300" alt="" style="max-width: 95%;">
                 </div>
             </div>
         </div>
