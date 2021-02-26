@@ -632,7 +632,7 @@
         for ( var i = 0; i < obj.packages.length; i++) {
             console.log(obj.packages[i]);
             $('#name'+i).text(obj.packages[i].name);
-            $('#normalPrice'+i).text(obj.packages[i].normalPrice);
+            $('#normalPrice'+i).text("Rp " + obj.packages[i].normalPrice);
             $('#newPrice'+i).html('<sup>Rp</sup> <strong style="font-size:40px;">'+obj.packages[i].normalPrice.split(".")[0]+'</strong> <sup><strong>.'+obj.packages[i].normalPrice.split(".")[1]+'</strong>/bln</sup>');
             $('#user'+i).text(obj.packages[i].user);
         }
