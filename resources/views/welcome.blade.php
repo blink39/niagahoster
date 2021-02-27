@@ -32,6 +32,7 @@
                 border-width: 1px;
                 border-color: grey;
                 display: inline-block;
+                box-shadow: 0px 7px 8px #888888;
             }
             
             .box-border-blue {
@@ -39,6 +40,7 @@
                 border-width: 1px;
                 border-color: #008FEE;
                 display: inline-block;
+                box-shadow: 0px 7px 8px #888888;
             }
 
             .btn-price {
@@ -71,6 +73,12 @@
             @media only screen and (max-width: 576px) {
                 .text-xs-center {
                     text-align: center !important;
+                }
+            }
+            
+            @media only screen and (max-width: 992px) {
+                .margin-price-50 {
+                    margin-top: 50px;
                 }
             }
         </style>
@@ -173,14 +181,16 @@
             </div>
 
             <div class="row justify-content-center margin-50">
-                <span style="font-weight: 600px; font-size: 35px;"><strong>Paket Hosting Singapura yang Tepat</strong></span> <br>
-                <span style="font-weight: 600px; font-size: 30px;">Diskon 40% + Domain dan SSL Gratis untuk Anda</span> <br>
+                <div class="col col-lg-12 col-md-12 col-sm-12 col-12" style="text-align:center;">
+                    <span style="font-weight: 600px; font-size: 35px;"><strong>Paket Hosting Singapura yang Tepat</strong></span> <br>
+                    <span style="font-weight: 600px; font-size: 30px;">Diskon 40% + Domain dan SSL Gratis untuk Anda</span> <br>
+                </div>
             </div>
 
             <div class="row justify-content-center margin-50">
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
                     <div class="row" style="text-align: center;">
-                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border">
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border margin-price-50">
                             <span style="font-weight: 600px; font-size: 35px;"><strong id="name0"></strong></span>
                             <hr>
                             <strike id="normalPrice0"></strike>
@@ -199,7 +209,7 @@
                             <br>
                             <br>
                         </div>
-                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border">
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border margin-price-50">
                             <span style="font-weight: 600px; font-size: 35px;"><strong id="name1"></strong></span>
                             <hr>
                             <strike id="normalPrice1"></strike>
@@ -224,7 +234,7 @@
                 </div>
                 <div class="col col-lg-5 col-md-10 col-sm-10 col-10 justify-content-center">
                     <div class="row" style="text-align: center;">
-                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border-blue" style="padding:0px;">
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border-blue margin-price-50" style="padding:0px;">
                             <div style="background-color:#008FEE;color:white;">
                                 <span style="font-weight: 600px; font-size: 35px;"><strong id="name2"></strong></span>
                                 <hr>
@@ -251,7 +261,7 @@
                             <br>
                             <br>
                         </div>
-                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border">
+                        <div class="col col-lg-6 col-md-6 col-xs-12 col-12 box-border margin-price-50">
                             <span style="font-weight: 600px; font-size: 35px;"><strong id="name3"></strong></span>
                             <hr>
                             <strike id="normalPrice3"></strike>
